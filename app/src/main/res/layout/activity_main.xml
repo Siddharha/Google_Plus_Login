@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="16dp"
+              tools:context=".MainActivity" >
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/btn_sign_in"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/btn_sign_out"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_logout_from_google"
+        android:visibility="gone"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/btn_revoke_access"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_revoke_access"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/flStrt"
+        android:visibility="gone">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Start_btn"
+            android:id="@+id/start_it"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:textColor="#ffffff"
+            android:textSize="40sp"
+            android:background="#008c06"
+            android:padding="30dp"
+            android:onClick="strtBtn"
+            android:nestedScrollingEnabled="false"/>
+    </FrameLayout>
+
+</LinearLayout>

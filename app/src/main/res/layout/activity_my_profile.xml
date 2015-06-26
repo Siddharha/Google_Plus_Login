@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.siddhartha.com.googlepluslogin.MyProfileActivity">
+
+    <LinearLayout
+        android:id="@+id/llProfile"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:visibility="visible"
+        android:background="#b10000">
+
+        <ImageView
+            android:id="@+id/imgProfilePic"
+            android:layout_width="40dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:background="#6e6e6e"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="2"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:textSize="20sp"
+                android:text="@string/Name_me"
+                android:textColor="#ffffff"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:textSize="18sp"
+                android:text="@string/Email_me"
+                android:textColor="#ffffff"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
