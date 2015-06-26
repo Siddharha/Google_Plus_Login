@@ -9,7 +9,7 @@ import android.widget.TextView;
 public class MyProfileActivity extends AppCompatActivity {
 
     private ImageView imgProfilePic;
-    private TextView txtName, txtEmail;
+    private TextView txtName, txtEmail,txtAboutme;
 
     String personName,email,personPhotoUrl,aboutMe;
     @Override
@@ -27,7 +27,7 @@ public class MyProfileActivity extends AppCompatActivity {
         imgProfilePic = (ImageView) findViewById(R.id.imgProfilePic);
         txtName = (TextView) findViewById(R.id.txtName);
         txtEmail = (TextView) findViewById(R.id.txtEmail);
-
+        txtAboutme = (TextView) findViewById(R.id.txt_about);
 
 
     }
@@ -39,7 +39,7 @@ public class MyProfileActivity extends AppCompatActivity {
     private void loadData() {
         txtName.setText(personName);
         txtEmail.setText(email);
-
+        txtAboutme.setText(aboutMe);
         new LoadProfileImage(imgProfilePic).execute(personPhotoUrl);
     }
 
