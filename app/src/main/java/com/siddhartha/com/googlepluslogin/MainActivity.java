@@ -1,5 +1,8 @@
 package com.siddhartha.com.googlepluslogin;
 
+/*Created by Siddhartha Maji
+* Dated: 6/26/2015
+* */
 import android.app.Activity;
 import android.content.Intent;
 import android.content.IntentSender.SendIntentException;
